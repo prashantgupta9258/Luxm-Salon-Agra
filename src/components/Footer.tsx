@@ -18,13 +18,13 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-6">
-            <a href="#" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#C4A47C] hover:border-[#C4A47C] transition-colors">
+            <a href="https://instagram.com/luxmsalonagra" aria-label="Follow us on Instagram" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#C4A47C] hover:border-[#C4A47C] transition-colors">
               <span className="text-xs">IG</span>
             </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#C4A47C] hover:border-[#C4A47C] transition-colors">
+            <a href="https://facebook.com/luxmsalonagra" aria-label="Follow us on Facebook" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#C4A47C] hover:border-[#C4A47C] transition-colors">
               <span className="text-xs">FB</span>
             </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#C4A47C] hover:border-[#C4A47C] transition-colors">
+            <a href="https://twitter.com/luxmsalonagra" aria-label="Follow us on X" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#C4A47C] hover:border-[#C4A47C] transition-colors">
               <span className="text-xs">X</span>
             </a>
           </div>

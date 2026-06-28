@@ -3,11 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import Home from './pages/Home';
-import Admin from './pages/Admin';
+
+const Admin = lazy(() => import('./pages/Admin'));
 
 function InitialLoader() {
   return (
@@ -67,7 +68,11 @@ export default function App() {
       </AnimatePresence>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin" element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <Admin />
+          </Suspense>
+        } />
       </Routes>
     </BrowserRouter>
   );

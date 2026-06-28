@@ -37,12 +37,12 @@ export default function Services() {
               className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow group rounded-sm overflow-hidden flex flex-col"
             >
               <div className="h-48 w-full overflow-hidden">
-                <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" />
+                <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" referrerPolicy="no-referrer" />
               </div>
               <div className="p-6 md:p-8 flex flex-col flex-grow justify-between">
                 <div>
                   <div className="flex justify-between items-start mb-4">
-                    <h2 className="font-serif text-xl text-[#1C1917] pr-2">{service.title}</h2>
+                    <h3 className="font-serif text-xl text-[#1C1917] pr-2">{service.title}</h3>
                     <span className="text-[#C4A47C] font-medium shrink-0">{service.price}</span>
                   </div>
                   <p className="text-sm text-gray-500 mb-6 leading-relaxed">
