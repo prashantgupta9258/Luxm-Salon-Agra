@@ -129,7 +129,7 @@ export default function Contact() {
         })
         .catch((e) => {
           const appts = JSON.parse(
-            localStorage.getItem("luxm_appointments") || "[]",
+            localStorage.getItem("lumx_appointments") || "[]",
           );
           setBookedSlots(
             appts
@@ -163,14 +163,14 @@ export default function Contact() {
         e,
       );
       const updatedAppts = JSON.parse(
-        localStorage.getItem("luxm_appointments") || "[]",
+        localStorage.getItem("lumx_appointments") || "[]",
       );
       updatedAppts.push({
         ...formData,
         id: Date.now().toString(),
         createdAt: Date.now(),
       });
-      localStorage.setItem("luxm_appointments", JSON.stringify(updatedAppts));
+      localStorage.setItem("lumx_appointments", JSON.stringify(updatedAppts));
     }
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 5000);
@@ -483,7 +483,7 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <MapPin className="text-[#C4A47C] w-5 h-5 shrink-0 mt-1" />
                   <p className="text-sm">
-                    Luxm Salon
+                    Lumx Salon Agra
                     <br />
                     Near Taj Mahal, Agra
                     <br />
@@ -496,7 +496,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="text-[#C4A47C] w-5 h-5 shrink-0" />
-                  <p className="text-sm">hello@luxmsalon.in</p>
+                  <p className="text-sm">hello@lumxsalon.in</p>
                 </div>
                 <div className="flex items-start gap-4 pt-4 border-t border-gray-300/50 mt-4">
                   <Clock className="text-[#C4A47C] w-5 h-5 shrink-0 mt-1" />
@@ -557,7 +557,7 @@ export default function Contact() {
             {/* Google Maps iframe */}
             <div className="flex-grow min-h-[300px] w-full bg-gray-200 rounded-sm overflow-hidden">
               <iframe
-                title="Luxm Salon Google Maps Location"
+                title="Lumx Salon Agra Google Maps Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113554.45524859942!2d77.925501861033!3d27.176274482025735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39740d857c2f41d9%3A0x784aef38a9523b42!2sAgra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1715082400000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"

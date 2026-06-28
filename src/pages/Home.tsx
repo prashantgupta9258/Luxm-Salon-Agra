@@ -25,10 +25,10 @@ export default function Home() {
             className="max-w-4xl mx-auto px-6 text-center"
           >
             <h2 className="font-serif text-4xl md:text-5xl text-[#1C1917] mb-6">
-              Why Choose Luxm Salon?
+              Why Choose Lumx Salon Agra?
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Founded with a passion for luxury and style, Luxm Salon represents
+              Founded with a passion for luxury and style, Lumx Salon Agra represents
               the pinnacle of modern hair design in Agra. Our team of expert
               stylists are dedicated to bringing out your natural beauty through
               personalized consultations, bespoke treatments, and precision

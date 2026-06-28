@@ -10,7 +10,7 @@ export default function Footer() {
             <a href="#" className="flex items-center gap-2 mb-4">
               <Scissors className="w-5 h-5 text-[#C4A47C]" />
               <span className="font-serif text-xl font-bold tracking-wider">
-                LUXM
+                LUMX
               </span>
             </a>
             <p className="text-gray-400 text-sm max-w-xs leading-relaxed">
@@ -21,21 +21,21 @@ export default function Footer() {
 
           <div className="flex gap-6">
             <a
-              href="https://instagram.com/luxmsalonagra"
+              href="https://instagram.com/lumxsalonagra"
               aria-label="Follow us on Instagram"
               className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#C4A47C] hover:border-[#C4A47C] transition-colors"
             >
               <span className="text-xs">IG</span>
             </a>
             <a
-              href="https://facebook.com/luxmsalonagra"
+              href="https://facebook.com/lumxsalonagra"
               aria-label="Follow us on Facebook"
               className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#C4A47C] hover:border-[#C4A47C] transition-colors"
             >
               <span className="text-xs">FB</span>
             </a>
             <a
-              href="https://twitter.com/luxmsalonagra"
+              href="https://twitter.com/lumxsalonagra"
               aria-label="Follow us on X"
               className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-[#C4A47C] hover:border-[#C4A47C] transition-colors"
             >
@@ -46,7 +46,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 uppercase tracking-widest gap-4">
           <p>
-            &copy; {new Date().getFullYear()} Luxm Salon. All rights reserved.
+            &copy; {new Date().getFullYear()} Lumx Salon Agra. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">

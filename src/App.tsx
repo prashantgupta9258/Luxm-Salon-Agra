@@ -30,7 +30,7 @@ function InitialLoader() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
         >
-          Luxm
+          Lumx
         </motion.h1>
         <motion.div
           className="h-[1px] bg-[#C4A47C] mx-auto mt-4"
