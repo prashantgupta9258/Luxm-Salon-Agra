@@ -4,9 +4,28 @@ import { Star } from 'lucide-react';
 import { db } from '../lib/firebase';
 import { collection, addDoc, serverTimestamp, query, where, orderBy, getDocs } from 'firebase/firestore';
 
+const formatDate = (createdAt: any, defaultDate: string) => {
+  if (!createdAt) return defaultDate;
+  try {
+    let dateObj;
+    if (createdAt.toDate) {
+      dateObj = createdAt.toDate();
+    } else if (typeof createdAt === 'number') {
+      dateObj = new Date(createdAt);
+    } else {
+      return defaultDate;
+    }
+    return dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  } catch (e) {
+    return defaultDate;
+  }
+};
+
 const ReviewCard = ({ review, index }: { review: any, index: number }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const isLong = review.text.length > 120;
+  
+  const displayDate = review.createdAt ? formatDate(review.createdAt, review.date || '') : (review.date || 'Just now');
 
   return (
     <motion.div 
@@ -36,7 +55,7 @@ const ReviewCard = ({ review, index }: { review: any, index: number }) => {
       </div>
       <div>
         <p className="font-serif text-lg">{review.name}</p>
-        <p className="text-xs text-gray-500 mt-1 uppercase tracking-wide">{review.date}</p>
+        <p className="text-xs text-gray-500 mt-1 uppercase tracking-wide">{displayDate}</p>
       </div>
     </motion.div>
   );
