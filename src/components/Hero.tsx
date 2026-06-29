@@ -34,11 +34,21 @@ export default React.memo(function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-serif text-5xl md:text-7xl lg:text-7xl text-white mb-8 leading-tight"
+          className="font-serif text-5xl md:text-7xl lg:text-7xl text-white mb-6 leading-tight"
         >
           Lumx Salon Agra – Premium <br />
           Unisex Salon
         </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-gray-200 text-lg md:text-xl max-w-2xl mb-8"
+        >
+          Experience the pinnacle of hair care, skin treatments, and bridal makeup at Agra's leading luxury salon. Our expert stylists are dedicated to bringing your unique vision to life.
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

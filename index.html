@@ -74,8 +74,6 @@
       content="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop"
     />
 
-    <link rel="canonical" href="https://luxm-salon-agra.vercel.app/" />
-
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="dns-prefetch" href="https://images.unsplash.com" />
     <link
@@ -84,6 +82,21 @@
       href="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=2000"
       fetchpriority="high"
     />
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1234567890123456');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Facebook Pixel Code -->
 
     <script type="application/ld+json">
       {
@@ -152,6 +165,8 @@
               "https://www.facebook.com/lumxsalonagra",
               "https://www.instagram.com/lumxsalonagra",
               "https://twitter.com/lumxsalonagra",
+              "https://www.youtube.com/@lumxsalonagra",
+              "https://www.linkedin.com/company/lumxsalonagra",
               "https://en.wikipedia.org/wiki/Beauty_salon",
               "https://www.wikidata.org/wiki/Q1135760"
             ],
@@ -314,6 +329,11 @@
     </noscript>
   </head>
   <body>
+    <!-- Facebook Pixel NoScript -->
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1234567890123456&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel NoScript -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
