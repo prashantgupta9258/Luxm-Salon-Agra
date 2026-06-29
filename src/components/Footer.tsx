@@ -8,11 +8,11 @@ export default React.memo(function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-12 mb-8 gap-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start">
             <a
-              href="#"
+              href="/"
               aria-label="Lumx Salon Agra Home"
               className="flex items-center gap-2 mb-4"
             >
-              <Scissors className="w-5 h-5 text-[#C4A47C]" />
+              <Scissors className="w-5 h-5 text-[#C4A47C]" aria-hidden="true" />
               <span className="font-serif text-xl font-bold tracking-wider">
                 LUMX
               </span>
@@ -60,10 +60,10 @@ export default React.memo(function Footer() {
             reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/terms" className="hover:text-white transition-colors">
               Terms of Service
             </a>
           </div>

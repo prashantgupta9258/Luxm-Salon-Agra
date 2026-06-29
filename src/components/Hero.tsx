@@ -9,7 +9,7 @@ export default React.memo(function Hero() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=2000")',
+            'url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format,compress&fm=webp&fit=crop&q=80&w=2000")',
         }}
         role="img"
         aria-label="Luxury salon interior at Lumx Salon Agra"

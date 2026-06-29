@@ -7,6 +7,7 @@ import React, { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 const Admin = lazy(() => import("./pages/Admin"));
 
@@ -76,6 +77,7 @@ export default function App() {
             </Suspense>
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
