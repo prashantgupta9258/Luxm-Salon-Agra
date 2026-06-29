@@ -9,7 +9,7 @@ export default React.memo(function Hero() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format,compress&fm=webp&fit=crop&q=80&w=2000")',
+            'url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=2000")',
         }}
         role="img"
         aria-label="Luxury salon interior at Lumx Salon Agra"
@@ -34,21 +34,11 @@ export default React.memo(function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-serif text-5xl md:text-7xl lg:text-7xl text-white mb-6 leading-tight"
+          className="font-serif text-5xl md:text-7xl lg:text-7xl text-white mb-8 leading-tight"
         >
           Lumx Salon Agra – Premium <br />
           Unisex Salon
         </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.2 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-gray-200 text-lg md:text-xl max-w-2xl mb-8"
-        >
-          Experience the pinnacle of hair care, skin treatments, and bridal makeup at Agra's leading luxury salon. Our expert stylists are dedicated to bringing your unique vision to life.
-        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -52,7 +52,7 @@ const ReviewCard = React.memo(
       >
         <div className="flex gap-1 mb-6">
           {[...Array(review.rating)].map((_, i) => (
-            <Star key={i} className="w-4 h-4 fill-[#C4A47C] text-[#C4A47C]" aria-hidden="true" />
+            <Star key={i} className="w-4 h-4 fill-[#C4A47C] text-[#C4A47C]" />
           ))}
         </div>
         <div className="flex-grow mb-8">

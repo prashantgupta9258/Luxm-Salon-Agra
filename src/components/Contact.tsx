@@ -276,7 +276,7 @@ export default React.memo(function Contact() {
 
             {submitted ? (
               <div className="bg-green-50 border border-green-200 text-green-800 p-8 rounded-sm text-center">
-                <Check className="w-12 h-12 text-green-500 mx-auto mb-4" aria-hidden="true" />
+                <Check className="w-12 h-12 text-green-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-serif mb-2">Request Received</h3>
                 <p>
                   Thank you! We have received your appointment request and will
@@ -490,7 +490,7 @@ export default React.memo(function Contact() {
                   itemScope
                   itemType="https://schema.org/PostalAddress"
                 >
-                  <MapPin className="text-[#C4A47C] w-5 h-5 shrink-0 mt-1" aria-hidden="true" />
+                  <MapPin className="text-[#C4A47C] w-5 h-5 shrink-0 mt-1" />
                   <p className="text-sm">
                     <span itemProp="streetAddress">Near Taj Mahal, Agra</span>
                     <br />
@@ -501,19 +501,19 @@ export default React.memo(function Contact() {
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Phone className="text-[#C4A47C] w-5 h-5 shrink-0" aria-hidden="true" />
+                  <Phone className="text-[#C4A47C] w-5 h-5 shrink-0" />
                   <p className="text-sm" itemProp="telephone">
                     +91 98765 43210
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Mail className="text-[#C4A47C] w-5 h-5 shrink-0" aria-hidden="true" />
+                  <Mail className="text-[#C4A47C] w-5 h-5 shrink-0" />
                   <p className="text-sm" itemProp="email">
                     hello@lumxsalon.in
                   </p>
                 </div>
                 <div className="flex items-start gap-4 pt-4 border-t border-gray-300/50 mt-4">
-                  <Clock className="text-[#C4A47C] w-5 h-5 shrink-0 mt-1" aria-hidden="true" />
+                  <Clock className="text-[#C4A47C] w-5 h-5 shrink-0 mt-1" />
                   <div className="text-sm space-y-1 w-full max-w-[200px]">
                     {settings && settings.businessHours ? (
                       [
