@@ -4,5 +4,11 @@
 
 [[redirects]]
   from = "/*"
+  to = "https://luxm-salon-agra.vercel.app/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
   to = "/index.html"
   status = 200
