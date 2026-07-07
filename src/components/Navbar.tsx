@@ -25,12 +25,12 @@ export default React.memo(function Navbar() {
         {/* Brand */}
         <a
           href="#"
-          aria-label="Lumx Salon Agra Home"
+          aria-label="Luxm Salon Agra Home"
           className="flex items-center gap-2 group"
         >
           <Scissors className="w-6 h-6 text-[#C4A47C]" />
           <span className="font-serif text-2xl font-bold tracking-wider">
-            LUMX
+            LUXM
           </span>
         </a>
 

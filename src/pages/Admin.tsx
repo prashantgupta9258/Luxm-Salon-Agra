@@ -78,10 +78,10 @@ export default function Admin() {
       console.error("Firebase Fetch failed, using local fallback", e);
       // Fallback for statically hosted or unconfigured firebase
       const storedAppts = JSON.parse(
-        localStorage.getItem("lumx_appointments") || "[]",
+        localStorage.getItem("luxm_appointments") || "[]",
       );
       const storedRevs = JSON.parse(
-        localStorage.getItem("lumx_reviews") || "[]",
+        localStorage.getItem("luxm_reviews") || "[]",
       );
       setAppointments(storedAppts);
       setReviews(storedRevs);
@@ -94,7 +94,7 @@ export default function Admin() {
     e.preventDefault();
     setError("");
 
-    const adminEmail = "admin@lumxsalon.in";
+    const adminEmail = "admin@luxmsalon.in";
     try {
       await signInWithEmailAndPassword(auth, adminEmail, password);
     } catch (e: any) {
@@ -202,7 +202,7 @@ export default function Admin() {
         className="max-w-6xl mx-auto bg-white shadow-sm border rounded-lg overflow-hidden"
       >
         <header className="bg-[#1C1917] text-white p-6 flex justify-between items-center">
-          <h1 className="text-2xl font-serif">Lumx Dashboard</h1>
+          <h1 className="text-2xl font-serif">Luxm Dashboard</h1>
           <button
             onClick={handleLogout}
             className="flex items-center gap-2 text-sm hover:text-[#C4A47C]"

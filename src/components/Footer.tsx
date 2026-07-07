@@ -9,12 +9,12 @@ export default React.memo(function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <a
               href="#"
-              aria-label="Lumx Salon Agra Home"
+              aria-label="Luxm Salon Agra Home"
               className="flex items-center gap-2 mb-4"
             >
               <Scissors className="w-5 h-5 text-[#C4A47C]" />
               <span className="font-serif text-xl font-bold tracking-wider">
-                LUMX
+                LUXM
               </span>
             </a>
             <p className="text-gray-400 text-sm max-w-xs leading-relaxed">
@@ -25,7 +25,7 @@ export default React.memo(function Footer() {
 
           <div className="flex gap-6">
             <a
-              href="https://instagram.com/lumxsalonagra"
+              href="https://instagram.com/luxmsalonagra"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow us on Instagram"
@@ -34,7 +34,7 @@ export default React.memo(function Footer() {
               <span className="text-xs">IG</span>
             </a>
             <a
-              href="https://facebook.com/lumxsalonagra"
+              href="https://facebook.com/luxmsalonagra"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow us on Facebook"
@@ -43,7 +43,7 @@ export default React.memo(function Footer() {
               <span className="text-xs">FB</span>
             </a>
             <a
-              href="https://twitter.com/lumxsalonagra"
+              href="https://twitter.com/luxmsalonagra"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow us on X"
@@ -56,7 +56,7 @@ export default React.memo(function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 uppercase tracking-widest gap-4">
           <p>
-            &copy; {new Date().getFullYear()} Lumx Salon Agra. All rights
+            &copy; {new Date().getFullYear()} Luxm Salon Agra. All rights
             reserved.
           </p>
           <div className="flex gap-6">

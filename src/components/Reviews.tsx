@@ -109,14 +109,14 @@ export default React.memo(function Reviews() {
           "Firebase query failed or unconfigured, falling back to local storage",
         );
         const storedRevs = JSON.parse(
-          localStorage.getItem("lumx_reviews") || "[]",
+          localStorage.getItem("luxm_reviews") || "[]",
         );
         if (storedRevs.length === 0) {
           const initial = [
             {
               id: "1",
               name: "Sarah Jenkins",
-              text: "Absolutely the best salon experience I've ever had. The staff was incredibly welcoming, the ambiance was perfectly relaxing, and the results were beyond my expectations. I will definitely be coming back and recommending Lumx to all my friends! They really take the time to understand what you want.",
+              text: "Absolutely the best salon experience I've ever had. The staff was incredibly welcoming, the ambiance was perfectly relaxing, and the results were beyond my expectations. I will definitely be coming back and recommending Luxm to all my friends! They really take the time to understand what you want.",
               rating: 5,
               date: "2 weeks ago",
               approved: true,
@@ -138,7 +138,7 @@ export default React.memo(function Reviews() {
               approved: true,
             },
           ];
-          localStorage.setItem("lumx_reviews", JSON.stringify(initial));
+          localStorage.setItem("luxm_reviews", JSON.stringify(initial));
           setReviews(initial);
         } else {
           setReviews(storedRevs.filter((r: any) => r.approved).reverse());
@@ -177,10 +177,10 @@ export default React.memo(function Reviews() {
         createdAt: Date.now(),
       };
       const storedRevs = JSON.parse(
-        localStorage.getItem("lumx_reviews") || "[]",
+        localStorage.getItem("luxm_reviews") || "[]",
       );
       storedRevs.push(localReview);
-      localStorage.setItem("lumx_reviews", JSON.stringify(storedRevs));
+      localStorage.setItem("luxm_reviews", JSON.stringify(storedRevs));
       setReviews((prev) => [localReview, ...prev]);
     }
     setSubmitted(true);
@@ -303,7 +303,7 @@ export default React.memo(function Reviews() {
                       Share Your Experience
                     </h3>
                     <p className="text-center text-sm text-gray-500 mb-6 md:mb-8">
-                      We would love to hear about your experience at Lumx Salon
+                      We would love to hear about your experience at Luxm Salon
                       Agra.
                     </p>
                     <form

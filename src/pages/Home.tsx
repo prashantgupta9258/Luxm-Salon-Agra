@@ -38,14 +38,14 @@ export default function Home() {
               className="font-serif text-4xl md:text-5xl text-[#1C1917] mb-6"
               itemProp="headline"
             >
-              Why Choose Lumx Salon Agra?
+              Why Choose Luxm Salon Agra?
             </h2>
             <p
               className="text-gray-600 text-lg leading-relaxed"
               itemProp="text"
             >
               Founded with a passion for luxury and style,{" "}
-              <strong>Lumx Salon Agra</strong> represents the pinnacle of modern
+              <strong>Luxm Salon Agra</strong> represents the pinnacle of modern
               hair design and beauty services in Agra, Uttar Pradesh. Our team
               of expert stylists are dedicated to bringing out your natural
               beauty through personalized consultations, bespoke balayage

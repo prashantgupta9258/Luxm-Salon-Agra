@@ -12,7 +12,7 @@ export default React.memo(function Hero() {
             'url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=2000")',
         }}
         role="img"
-        aria-label="Luxury salon interior at Lumx Salon Agra"
+        aria-label="Luxury salon interior at Luxm Salon Agra"
       >
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
@@ -36,7 +36,7 @@ export default React.memo(function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-serif text-5xl md:text-7xl lg:text-7xl text-white mb-8 leading-tight"
         >
-          Lumx Salon Agra – Premium <br />
+          Luxm Salon Agra – Premium <br />
           Unisex Salon
         </motion.h1>
 
